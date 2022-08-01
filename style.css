@@ -32,9 +32,18 @@ button{
     width: 100%;
     border: none;
     font-size: 2rem;
-    background-color: red;
+    background-color: rgb(90, 87, 87);
     color: white;
     font-family: cursive;
+    letter-spacing: 4px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(252, 84, 112);
+}
+button:hover i{
+    color: red;
+    text-shadow: 0 0 5px yellow;
 }
 input{
     width: 100%;
@@ -44,4 +53,7 @@ input{
     border-radius: 20px;
     outline: none;
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
+input:focus{
+    box-shadow: 0 0 10px 2px red;
 }
