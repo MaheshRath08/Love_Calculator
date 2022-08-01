@@ -42,7 +42,7 @@ button{
 button:hover{
     background-color: rgb(252, 84, 112);
 }
-button:hover i{
+#findBtn:hover i{
     color: red;
     text-shadow: 0 0 5px yellow;
 }
@@ -63,4 +63,58 @@ input:focus::placeholder{
 }
 input::placeholder{
     text-align: center;
+}
+.container{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255, 189, 189, 0.301);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.result{
+    background-color: rgb(240, 160, 187);
+    padding: 4rem;
+    border-radius: 1.5rem;
+    position: relative;
+    text-align: center;
+    display: block;
+    box-shadow: 0 0 200px 5px rgba(255, 0, 0, 0.534);
+}
+.name{
+    font-size: 2rem;
+    font-weight: 800;
+    position: absolute;
+    margin: 2rem 0;
+}
+.yn{
+    left: 6rem;
+}
+.tn{
+    right: 6rem;
+}
+.score{
+    font-size: 3rem;
+    color: white;
+    text-shadow: 0 0 5px red;
+}
+.result button{
+    border-radius: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    outline: none;
+}
+.result h1{
+    margin-bottom: 2rem;
+    color: cyan;
+    text-shadow: 0 0 5px black;
+}
+#retry:hover{
+    color: black;
+    background-color: white;
 }
