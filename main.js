@@ -2,26 +2,24 @@ let yName = document.getElementById("yn")
 let tName = document.getElementById("tn")
 let findBtn = document.getElementById("findBtn")
 let main = document.querySelector(".main")
+let container = document.querySelector(".container")
+let result = document.querySelector(".result")
 
 findBtn.addEventListener("click", ()=>{
     main.style.transform = "scale(0)"
-    let resultContainer = document.createElement("result")
-    document.body.appendChild(resultContainer)
-    resultContainer.classList.add("container")
-    let result = document.createElement("div")
-    resultContainer.appendChild(result)
-    result.classList.add("result")
-
+    container.style.display = "flex"
+    
     let score = Math.floor(Math.random()*101)
     let message = condition(score)
     result.innerHTML = `<h1>${message}</h1>
                         <span class="yn name">${yName.value}</span><span class="score">${score}%</span><span class="tn name">${tName.value}</span>  
-                        <button id="retry"><i class="fa-solid fa-arrow-rotate-left"></i>Retry</button>`
-    document.getElementById("retry").addEventListener("click", ()=>{
-        resultContainer.style.display = "none"
-        main.style.transform = "scale(1)"
-    })
+                        <button id="retry" onclick="retry()"><i class="fa-solid fa-arrow-rotate-left"></i>Retry</button>`                        
 })
+
+function retry(){
+    container.style.display = "none"
+    main.style.transform = "scale(1)"
+}
 
 function condition(e){
     let message;
