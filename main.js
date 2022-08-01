@@ -17,6 +17,10 @@ findBtn.addEventListener("click", ()=>{
     result.innerHTML = `<h1>${message}</h1>
                         <span class="yn name">${yName.value}</span><span class="score">${score}%</span><span class="tn name">${tName.value}</span>  
                         <button id="retry"><i class="fa-solid fa-arrow-rotate-left"></i>Retry</button>`
+    document.getElementById("retry").addEventListener("click", ()=>{
+        resultContainer.style.display = "none"
+        main.style.transform = "scale(1)"
+    })
 })
 
 function condition(e){
