@@ -8,9 +8,10 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan);
 }
 main{
-    background-color: pink;
+    background:rgb(252, 168, 182);
     width:50% ;
     border-radius: 1.5rem;
     overflow: hidden;
@@ -57,6 +58,7 @@ input{
 }
 input:focus{
     box-shadow: 0 0 10px 2px red;
+    background-color: rgb(241, 215, 220);
 }
 input:focus::placeholder{
     color: palevioletred;
