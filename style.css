@@ -1,0 +1,47 @@
+*{
+    margin:0%;
+    padding: 0%;
+    font-family: cursive;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+main{
+    background-color: pink;
+    width:50% ;
+    border-radius: 1.5rem;
+    overflow: hidden;
+}
+form{
+    text-align: center;
+    padding: 4rem ;
+}
+main label{
+    display: block;
+    margin: 1rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+button{
+    display: block;
+    padding: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+    border: none;
+    font-size: 2rem;
+    background-color: red;
+    color: white;
+    font-family: cursive;
+}
+input{
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 20px;
+    outline: none;
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+}
