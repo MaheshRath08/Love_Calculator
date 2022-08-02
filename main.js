@@ -6,16 +6,18 @@ let container = document.querySelector(".container")
 let result = document.querySelector(".result")
 
 findBtn.addEventListener("click", ()=>{
-    main.style.transform = "scale(0)"
-    container.style.display = "flex"
-    
-    let score = Math.floor(Math.random()*101)
-    let message = condition(score)
-    result.innerHTML = `<h1>${message}</h1>
-                        <span class="yn name">${yName.value}</span><span class="score">${score}%</span><span class="tn name">${tName.value}</span>  
-                        <button id="retry" onclick="retry()"><i class="fa-solid fa-arrow-rotate-left"></i>Retry</button>`                        
-    yName.value=""
-    tName.value=""
+    if(!nameVerify()){
+        main.style.transform = "scale(0)"
+        container.style.display = "flex"
+        
+        let score = Math.floor(Math.random()*101)
+        let message = condition(score)
+        result.innerHTML = `<h1>${message}</h1>
+                            <span class="yn name">${yName.value}</span><span class="score">${score}%</span><span class="tn name">${tName.value}</span>  
+                            <button id="retry" onclick="retry()"><i class="fa-solid fa-arrow-rotate-left"></i>Retry</button>`                        
+        yName.value=""
+        tName.value=""
+    }
 })
 
 function retry(){
@@ -43,4 +45,12 @@ function condition(e){
         message = "Author loves you more than anyone <3"
     }
     return message
+}
+function nameVerify(){
+    if(!isNaN(yName.value) || !isNaN(tName.value)){
+        yName.value=""
+        tName.value=""
+        alert("Write the names properly!!")
+        return true
+    }
 }
