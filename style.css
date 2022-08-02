@@ -16,6 +16,7 @@ main{
     border-radius: 1.5rem;
     overflow: hidden;
     box-shadow: 0 0 20px 5px black;
+    transition: 0.2s transform linear;
 }
 form{
     text-align: center;
@@ -77,6 +78,7 @@ input::placeholder{
     display: none;
     align-items: center;
     justify-content: center;
+    transition: 0.4s display linear;
 }
 .result{
     background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan);
@@ -88,10 +90,11 @@ input::placeholder{
     box-shadow: 0 0 20px 5px black;
 }
 .name{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: 800;
     position: absolute;
     margin: 2rem 0;
+    text-shadow: 0 0 5px white;
 }
 .yn{
     left: 6rem;
@@ -122,4 +125,7 @@ input::placeholder{
 #retry:hover{
     color: black;
     background-color: white;
+}
+#retry:active{
+    transform: scale(0.93);
 }
