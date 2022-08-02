@@ -78,7 +78,7 @@ input::placeholder{
     display: none;
     align-items: center;
     justify-content: center;
-    transition: 0.4s display linear;
+    transition: 0.4s display ease-in-out;
 }
 .result{
     background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan);
@@ -93,19 +93,12 @@ input::placeholder{
 .name{
     font-size: 2.5rem;
     font-weight: 800;
-    position: absolute;
     margin: 3rem 0;
-    text-shadow: 0 0 5px red;
+    text-shadow: 0 0 5px yellow;
     color: white;
 }
-.yn{
-    left: 6rem;
-}
-.tn{
-    right: 6rem;
-}
 .score{
-    font-size: 3rem;
+    font-size: 3.5rem;
     color: white;
     text-shadow: 0 0 7px red;
 }
@@ -114,15 +107,17 @@ input::placeholder{
     padding: 0.5rem;
     width: 50%;
     margin: 0 auto;
-    margin-top: 3rem;
+    margin-top: 4rem;
     outline: none;
     box-shadow: 0 0 10px 3px black;
     background-color: red;
+    display: block;
 }
 .result h1{
-    margin-bottom: 2rem;
-    color: white;
-    text-shadow: 0 0 5px black;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color:yellow;
+    text-shadow: 2px 2px 6px black;
 }
 #retry:hover{
     color: black;

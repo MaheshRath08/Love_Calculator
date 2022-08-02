@@ -13,7 +13,9 @@ findBtn.addEventListener("click", ()=>{
         let score = Math.floor(Math.random()*101)
         let message = condition(score)
         result.innerHTML = `<h1>${message}</h1>
-                            <span class="yn name">${yName.value}</span><span class="score">${score}%</span><span class="tn name">${tName.value}</span>  
+                            <h2 class="yn name">${yName.value}</h2>
+                            <h2 class="score">${score}%</h2>
+                            <h2 class="tn name">${tName.value}</h2>  
                             <button id="retry" onclick="retry()"><i class="fa-solid fa-arrow-rotate-left"></i>Retry</button>`                        
         yName.value=""
         tName.value=""
