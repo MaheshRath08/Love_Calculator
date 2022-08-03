@@ -9,10 +9,11 @@ let isCreator = false
 findBtn.addEventListener("click", ()=>{
     if(!nameVerify()){
         main.style.transform = "scale(0)"
-        container.style.display = "flex"
+        container.style.transform = "scale(1)"
+        result.style.transform = "translateY(0)"
 
         let biasScore = creatorBias()
-        let score
+        let score;
         if(isCreator == true){
             score = biasScore
         }else{
@@ -30,14 +31,15 @@ findBtn.addEventListener("click", ()=>{
 })
 
 function retry(){
-    container.style.display = "none"
+    container.style.transform = "scale(0)"
     main.style.transform = "scale(1)"
+    result.style.transform = "translateY(-10vh)"
 }
 
 function condition(e){
     let message;
     if(e==100){
-        message = "You two are Perfect!! Like potato and steam"
+        message = "You two are Perfect!! Consider a marriage"
     }else if(e >= 90 && e<100){
         message = "Go for it!!Love alone can rekindle life"
     }else if(e>=70 && e<90){
@@ -47,7 +49,7 @@ function condition(e){
     }else if (e>=30 && e<50){
         message = "Have enough courage to trust love one more time"
     }else if (e<30 && e!=0){
-        message = "No worries mate!! lemme talk to a dalal"
+        message = "No worries mate!! You will be there"
     }else if(e==0){
         message = "Tumse naa ho payega bro"
     }else{

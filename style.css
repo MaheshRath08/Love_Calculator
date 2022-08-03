@@ -75,10 +75,11 @@ input::placeholder{
     bottom: 0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.4);
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: center;
-    transition: 0.4s display ease-in-out;
+    transform: scale(0) translateY(-110vh);
+    transition: 0.1s transform ease-in-out;
 }
 .result{
     background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan);
@@ -89,6 +90,8 @@ input::placeholder{
     text-align: center;
     display: block;
     box-shadow: 0 0 20px 5px black;
+    transform: translateY(-10vh);
+    transition: 0.4s transform ease-in;
 }
 .name{
     font-size: 2rem;
