@@ -70,5 +70,7 @@ function creatorBias(){
     if(yName.value.toLowerCase() == "mahesh" || tName.value.toLowerCase()== "mahesh"){
         isCreator = true
         return 100
+    }else{
+        isCreator = false
     }
 }
