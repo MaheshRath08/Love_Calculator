@@ -4,13 +4,20 @@ let findBtn = document.getElementById("findBtn")
 let main = document.querySelector(".main")
 let container = document.querySelector(".container")
 let result = document.querySelector(".result")
+let isCreator = false
 
 findBtn.addEventListener("click", ()=>{
     if(!nameVerify()){
         main.style.transform = "scale(0)"
         container.style.display = "flex"
-        
-        let score = Math.floor(Math.random()*101)
+
+        let biasScore = creatorBias()
+        let score
+        if(isCreator == true){
+            score = biasScore
+        }else{
+            score = Math.floor(Math.random()*101)
+        }
         let message = condition(score)
         result.innerHTML = `<h1>${message}</h1>
                             <h2 class="yn name">${yName.value}</h2>
@@ -48,11 +55,18 @@ function condition(e){
     }
     return message
 }
+
 function nameVerify(){
     if(!isNaN(yName.value) || !isNaN(tName.value)){
         yName.value=""
         tName.value=""
         alert("Write the names properly!!")
         return true
+    }
+}
+function creatorBias(){
+    if(yName.value.toLowerCase() == "mahesh" || tName.value.toLowerCase()== "mahesh"){
+        isCreator = true
+        return 100
     }
 }
