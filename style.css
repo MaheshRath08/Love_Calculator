@@ -78,7 +78,7 @@ input::placeholder{
     display: flex;
     align-items: center;
     justify-content: center;
-    transform: scale(0) translateY(-110vh);
+    transform: scale(0);
     transition: 0.1s transform ease-in-out;
 }
 .result{
@@ -91,7 +91,7 @@ input::placeholder{
     display: block;
     box-shadow: 0 0 20px 5px black;
     transform: translateY(-10vh);
-    transition: 0.4s transform ease-in;
+    transition: 1s transform ease-in;
 }
 .name{
     font-size: 2rem;
