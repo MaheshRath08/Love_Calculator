@@ -80,7 +80,7 @@ input::placeholder{
     align-items: center;
     justify-content: center;
     transform: scale(0);
-    transition: 0.001s transform ease-in-out 0.5s;
+    transition: 0.2s transform ease-in-out 0.1s;
 }
 .result{
     /* background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan); */
@@ -92,7 +92,7 @@ input::placeholder{
     text-align: center;
     display: block;
     box-shadow: 0 0 20px 5px black;
-    transition: 0.2s transform ease-in 0.7s;
+    transition: 0.2s transform ease-in 0.1s;
 }
 .name{
     font-size: 2rem;
