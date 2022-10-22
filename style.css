@@ -8,10 +8,11 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan);
+    /* background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan); */
+    background-color: #303030;
 }
 main{
-    background:rgb(252, 168, 182);
+    background:#d84464;
     width:50%;
     border-radius: 1.5rem;
     overflow: hidden;
@@ -27,6 +28,7 @@ main label{
     margin: 1rem;
     font-size: 1.7rem;
     font-weight: 800;
+    color: white;
 }
 button{
     display: block;
@@ -35,14 +37,14 @@ button{
     width: 100%;
     border: none;
     font-size: 2rem;
-    background-color: rgb(90, 87, 87);
+    background-color: rgb(58, 58, 58);
     color: white;
     font-family: cursive;
     letter-spacing: 4px;
     cursor: pointer;
 }
 button:hover{
-    background-color: rgb(252, 84, 112);
+    background-color: #2e2e2e;
 }
 #findBtn:hover i, #findBtn:focus i{
     color: red;
@@ -53,13 +55,12 @@ input{
     padding: 0.7rem;
     font-size: 1.1rem;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
     outline: none;
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 8px 2px black;
 }
 input:focus{
     box-shadow: 0 0 10px 2px red;
-    background-color: rgb(241, 215, 220);
 }
 input:focus::placeholder{
     color: palevioletred;
@@ -82,7 +83,8 @@ input::placeholder{
     transition: 0.001s transform ease-in-out 0.5s;
 }
 .result{
-    background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan);
+    /* background:linear-gradient(90deg,rgb(253, 102, 127) 40% , cyan); */
+    background-color: #383838;
     width: 50%;
     padding: 4rem;
     border-radius: 1.5rem;
@@ -90,8 +92,7 @@ input::placeholder{
     text-align: center;
     display: block;
     box-shadow: 0 0 20px 5px black;
-    transform: translateY(-10vh);
-    transition: 1s transform ease-in 0.7s;
+    transition: 0.2s transform ease-in 0.7s;
 }
 .name{
     font-size: 2rem;
