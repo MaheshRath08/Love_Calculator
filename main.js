@@ -67,7 +67,9 @@ function nameVerify(){
     }
 }
 function creatorBias(){
-    if(yName.value.toLowerCase() == "mahesh" || tName.value.toLowerCase()== "mahesh"){
+    let yNamefixed = yName.value.trim()
+    let tNamefixed = tName.value.trim()
+    if(yNamefixed.toLowerCase() == "mahesh" || tNamefixed.toLowerCase()== "mahesh"){
         isCreator = true
         return 100
     }else{
