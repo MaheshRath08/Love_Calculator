@@ -1,7 +1,7 @@
 *{
     margin:0%;
     padding: 0%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: monospace;
 }
 body{
     display: flex;
@@ -46,7 +46,7 @@ button{
 button:hover{
     background-color: #2e2e2e;
 }
-#findBtn:hover i, #findBtn:focus i{
+#findBtn:hover i, #findBtn:active i{
     color: red;
     text-shadow: 0 0 15px yellow;
 }
@@ -64,7 +64,6 @@ input:focus{
 }
 input:focus::placeholder{
     color: palevioletred;
-    font-weight: 800;
 }
 input::placeholder{
     text-align: center;
